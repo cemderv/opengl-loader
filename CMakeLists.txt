@@ -15,6 +15,6 @@ target_sources(opengl-loader PRIVATE
   ${gladDir}/khrplatform.h
 )
 
-target_include_directories(opengl-loader PUBLIC ${gladDir})
+target_include_directories(opengl-loader SYSTEM PUBLIC ${gladDir})
 
 set_target_properties(opengl-loader PROPERTIES FOLDER "cerlib")
